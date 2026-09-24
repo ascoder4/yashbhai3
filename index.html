@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#062b25" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b1426" />
     <title>Veer Game Admin Panel</title>
     <meta name="description"
         content="Download the Veer Game Admin Panel APK. Private Android app access for registered members." />
@@ -23,17 +23,21 @@
     <meta name="twitter:description"
         content="Download the Veer Game Admin Panel APK. Private Android app access for registered members." />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
     <style>
         :root {
-            --bg: #042c26;
-            --bg2: #063c33;
-            --card: #0b4a40;
-            --card2: #083e36;
-            --line: rgba(220, 255, 247, .22);
-            --text: #f5fffc;
-            --muted: #c7d8d5;
-            --accent1: #2be67f;
-            --accent2: #21d6d0;
+            --bg: #0b1426;
+            --bg2: #111d3b;
+            --card: #1a2b50;
+            --card2: #152240;
+            --line: rgba(220, 235, 255, .15);
+            --text: #f5f9ff;
+            --muted: #b0c4de;
+            --accent1: #34a4eb;
+            --accent2: #2eb6ff;
             --shadow: 0 30px 80px rgba(0, 0, 0, .25);
         }
 
@@ -47,8 +51,8 @@
             min-height: 100%;
             font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
             background:
-                radial-gradient(circle at 50% 32%, rgba(19, 119, 98, .23) 0, rgba(19, 119, 98, 0) 34%),
-                linear-gradient(180deg, #073a31 0%, #062f29 45%, #03261f 100%);
+                radial-gradient(circle at 50% 32%, rgba(52, 164, 235, .15) 0, rgba(52, 164, 235, 0) 34%),
+                linear-gradient(180deg, #0d1b2a 0%, #08111e 45%, #050a12 100%);
             color: var(--text);
         }
 
@@ -63,10 +67,11 @@
             width: 100%;
             max-width: 430px;
             min-height: 100svh;
-            padding: 40px 15px;
+            padding: 20px 15px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
+            margin: 0 auto;
         }
 
         .shell {
@@ -76,7 +81,7 @@
 
         .card {
             background:
-                linear-gradient(180deg, rgba(25, 129, 106, .30), rgba(5, 58, 49, .52));
+                linear-gradient(180deg, rgba(52, 164, 235, .15), rgba(13, 27, 42, .52));
             border: 1px solid var(--line);
             border-radius: 36px;
             overflow: hidden;
@@ -94,7 +99,7 @@
             height: 156px;
             margin: 0 auto 25px;
             border-radius: 36px;
-            background: #f6f8f7;
+            background: #f0f4f8;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -108,7 +113,7 @@
             height: 130px;
             border-radius: 28px;
             background: #26272b;
-            border: 3px solid #9af3cd;
+            border: 3px solid #7dc3f5;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -128,7 +133,7 @@
         }
 
         .logo-fallback .dot {
-            color: #8be9bf;
+            color: #7dc3f5;
         }
 
         h1 {
@@ -144,7 +149,7 @@
             max-width: 330px;
             font-size: 19px;
             line-height: 1.45;
-            color: #cfddda;
+            color: #c3d2e6;
             font-weight: 560;
             letter-spacing: -.5px;
         }
@@ -152,7 +157,7 @@
         .stats {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            border: 1px solid rgba(208, 242, 235, .24);
+            border: 1px solid rgba(208, 225, 242, .24);
             border-radius: 35px;
             overflow: hidden;
             background: rgba(255, 255, 255, .025);
@@ -165,7 +170,7 @@
             align-items: center;
             justify-content: center;
             padding: 10px 5px;
-            border-right: 1px solid rgba(208, 242, 235, .22);
+            border-right: 1px solid rgba(208, 225, 242, .22);
         }
 
         .stat:last-child {
@@ -174,7 +179,7 @@
 
         .label {
             font-size: 13px;
-            color: #b7cbc7;
+            color: #a6b9d1;
             font-weight: 650;
             letter-spacing: .2px;
             margin-bottom: 6px;
@@ -183,7 +188,7 @@
         .value {
             font-size: 20px;
             font-weight: 790;
-            color: #f8fffd;
+            color: #f8faff;
         }
 
         .download {
@@ -194,12 +199,12 @@
             margin-top: 25px;
             padding: 20px 20px;
             background: linear-gradient(100deg, var(--accent1) 0%, var(--accent2) 100%);
-            color: #03251f;
+            color: #ffffff;
             font-size: 22px;
             font-weight: 800;
             text-decoration: none;
             cursor: pointer;
-            box-shadow: 0 12px 35px rgba(22, 220, 163, .16);
+            box-shadow: 0 12px 35px rgba(52, 164, 235, .3);
             transition: transform .16s ease, filter .16s ease;
         }
 
@@ -216,19 +221,19 @@
             margin: 20px 0 0;
             font-size: 16px;
             line-height: 1.45;
-            color: #cad8d5;
+            color: #b8c9de;
             font-weight: 500;
         }
 
         .footer {
-            border-top: 1px solid rgba(208, 242, 235, .18);
+            border-top: 1px solid rgba(208, 225, 242, .18);
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 25px;
             padding: 20px 15px;
             font-size: 16px;
-            color: #d0ddda;
+            color: #c0d0e6;
         }
 
         .footer a {
@@ -240,7 +245,7 @@
             text-align: center;
             margin-top: 20px;
             padding: 0 10px;
-            color: #aebfbc;
+            color: #9caebf;
             font-size: 13px;
             line-height: 1.5;
         }
@@ -436,13 +441,181 @@
                 transition: none
             }
         }
+
+        h1.channel-name {
+            font-family: 'Anton', 'Arial Black', sans-serif;
+            font-size: clamp(32px, 10vw, 50px);
+            line-height: 1.1;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            z-index: 3;
+            margin: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h1.channel-name .word-gold {
+            background: linear-gradient(170deg, #ffcc00 0%, #ffaa00 30%, #ff7b00 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h1.channel-name .word-pink {
+            background: linear-gradient(170deg, #ff6b9d 0%, #ff2d78 40%, #cc0055 85%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Avatar Animation */
+        .avatar-stage {
+            position: relative;
+            width: clamp(105px, 28vh, 140px);
+            height: clamp(105px, 28vh, 140px);
+            flex-shrink: 0;
+            z-index: 3;
+            margin: 0 auto 25px auto;
+        }
+        .avatar-glow {
+            position: absolute;
+            inset: -24px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 204, 0, 0.6) 0%, rgba(255, 45, 120, 0.5) 40%, transparent 70%);
+            animation: glowPulse 2.4s ease-in-out infinite;
+            pointer-events: none;
+        }
+        @keyframes glowPulse {
+            0%, 100% { transform: scale(0.85); opacity: 0.7; }
+            50% { transform: scale(1.2); opacity: 1; }
+        }
+        .ring {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .ring-1 {
+            inset: -6px;
+            background: conic-gradient(from 0deg, #ffcc00, #ff2d78, #00e5ff, #ff7b00, #ffcc00);
+            -webkit-mask: radial-gradient(transparent 60%, black 63%);
+            mask: radial-gradient(transparent 60%, black 63%);
+            animation: spinClockwise 4s linear infinite;
+        }
+        .ring-2 {
+            inset: -14px;
+            background: conic-gradient(from 180deg, #ff6b9d, #ffe680, #00e5ff, #ff2d78, #ff6b9d);
+            -webkit-mask: radial-gradient(transparent 66%, black 69%);
+            mask: radial-gradient(transparent 66%, black 69%);
+            animation: spinCounterClockwise 6s linear infinite;
+        }
+        .ring-3 {
+            inset: -22px;
+            border: 2.5px dashed #ffcc00;
+            animation: spinClockwise 8s linear infinite;
+        }
+        @keyframes spinClockwise { to { transform: rotate(360deg); } }
+        @keyframes spinCounterClockwise { to { transform: rotate(-360deg); } }
+        .avatar-static {
+            position: absolute;
+            inset: 4px;
+            border-radius: 50%;
+            background: #0a0a14;
+            overflow: hidden;
+            z-index: 4;
+            box-shadow: 0 0 0 4px rgba(10, 10, 20, 0.9), 0 8px 25px rgba(0, 0, 0, 0.6);
+        }
+        .avatar-static img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .avatar-static::after {
+            content: '';
+            position: absolute;
+            top: -150%;
+            left: -60%;
+            width: 50%;
+            height: 400%;
+            background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.3) 45%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.3) 55%, transparent 100%);
+            transform: rotate(28deg);
+            animation: shineSweep 3.2s ease-in-out infinite;
+            pointer-events: none;
+        }
+        @keyframes shineSweep {
+            0% { left: -65%; }
+            40%, 100% { left: 140%; }
+        }
+        .verified {
+            position: absolute;
+            bottom: 3px;
+            right: 3px;
+            width: 28px;
+            height: 28px;
+            background: #00e5ff;
+            border: 3px solid #0a0a14;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.8);
+            z-index: 6;
+        }
+        .verified svg { width: 14px; height: 14px; }
+        .spark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 7px;
+            height: 7px;
+            margin: -3.5px 0 0 -3.5px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 2;
+            box-shadow: 0 0 12px 3px currentColor;
+        }
+        .spark.s1 {
+            color: #ffcc00;
+            background: #ffcc00;
+            --orbit-radius: clamp(56px, 15vh, 78px);
+            animation: orbit 4.5s linear infinite;
+        }
+        .spark.s2 {
+            color: #ff2d78;
+            background: #ff2d78;
+            --orbit-radius: clamp(64px, 17vh, 86px);
+            animation: orbit 5.8s linear infinite;
+            animation-delay: -2s;
+        }
+        .spark.s3 {
+            color: #00e5ff;
+            background: #00e5ff;
+            --orbit-radius: clamp(52px, 14vh, 72px);
+            animation: orbit 3.8s linear infinite;
+            animation-delay: -3.5s;
+        }
+        @keyframes orbit {
+            from { transform: rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg); }
+            to { transform: rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg); }
+        }
+        @media (max-width: 360px) {
+            .avatar-stage { width: 85px; height: 85px; }
+            .ring-1 { inset: -4px; }
+            .ring-2 { inset: -10px; }
+            .ring-3 { inset: -16px; border-width: 2px; }
+            .verified { width: 22px; height: 22px; }
+            .verified svg { width: 11px; height: 11px; }
+            .spark.s1 { --orbit-radius: 44px; }
+            .spark.s2 { --orbit-radius: 50px; }
+            .spark.s3 { --orbit-radius: 40px; }
+        }
     </style>
     <!-- Meta Pixel Code -->
     <script>
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -464,54 +637,42 @@
             <section class="card">
 
                 <div class="main">
-                    <div class="logo-wrap">
-                        <div class="logo-box">
-                            <div class="logo-fallback">VEER<span class="dot">.</span>GAME</div>
+                    <div class="avatar-stage">
+                        <div class="avatar-glow"></div>
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+                        <div class="spark s1"></div>
+                        <div class="spark s2"></div>
+                        <div class="spark s3"></div>
+                        <div class="avatar-static">
+                            <img src="https://aorajon.github.io/tufan5/tufan2.jpg" alt="Logo" loading="eager">
+                        </div>
+                        <div class="verified">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#0a0a14" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
                     </div>
 
-                    <h1>Veer Game<br>Admin Panel</h1>
+                    <h1 class="channel-name"><span class="word-gold">TUFAN</span> <span class="word-pink">ARMY</span></h1>
 
-                    <p class="subtitle">
-                        Private Android app access for registered members.
-                    </p>
-
-                    <div class="stats">
-                        <div class="stat">
-                            <div class="label">VERSION</div>
-                            <div class="value">1.0.5</div>
-                        </div>
-                        <div class="stat">
-                            <div class="label">SIZE</div>
-                            <div class="value">1.6 MB</div>
-                        </div>
-                        <div class="stat">
-                            <div class="label">TYPE</div>
-                            <div class="value">APK</div>
-                        </div>
-                    </div>
-
-                    <!-- Replace YOUR-APK-LINK.apk with your direct APK URL -->
-                    <a class="download" href="https://asadhacks.hackdevloper.sbs/VEER-GAME-HACK.apk" download
-                        aria-label="Download Veer Game APK" onclick="if(window.fbq) fbq('track', 'Lead');">
-                        Download APK
+                    <!-- Top Telegram Button -->
+                    <a class="download" href="https://t.me/+aBFjvkJtBeBlYjhl" target="_blank" aria-label="Join Telegram"
+                        onclick="if(window.fbq) fbq('track', 'Lead');" style="margin-bottom: 25px;">
+                        Join Telegram
                     </a>
 
-                    <p class="hint">
-                        Download, install, then register inside the app.
-                    </p>
+                    <div style="margin-top: 15px; border-radius: 18px; overflow: hidden; border: 1px solid rgba(208, 225, 242, 0.2); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);">
+                        <img src="https://ascoder4.github.io/yashbhai3/photo_2026-09-24_16-41-59.jpg" alt="Preview Image" style="width: 100%; height: auto; display: block;" />
+                    </div>
+
+                    <!-- Replace with your Telegram URL -->
+                    <a class="download" href="https://t.me/+aBFjvkJtBeBlYjhl" target="_blank" aria-label="Join Telegram"
+                        onclick="if(window.fbq) fbq('track', 'Lead');" style="position: sticky; bottom: 25px; z-index: 100; box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 12px 35px rgba(52, 164, 235, .4);">
+                        Join Telegram
+                    </a>
+
                 </div>
-
-                <footer class="footer">
-                    <a href="/privacy.html">Privacy</a>
-                    <a href="/terms.html">Terms</a>
-                </footer>
-
             </section>
-
-            <div class="legal">
-                18+ only. Private access only. Follow applicable local rules.
-            </div>
         </div>
     </main>
 </body>
